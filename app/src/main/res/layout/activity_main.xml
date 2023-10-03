@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- inside joke for cat people -->
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How do you say &quot;meow&quot;?"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/optionOne"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="350dp"
+        android:text="meow"
+        android:textColor="#000000"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/optionTwo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="weow"
+        android:textStyle="bold"
+        android:backgroundTint="#ADD8E6"
+        app:layout_constraintTop_toBottomOf="@id/optionOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/optionThree"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="wow-wow"
+        android:textColor="#000000"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/optionTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct solution:"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="200dp"
+        app:layout_constraintTop_toBottomOf="@id/question"
+        app:layout_constraintStart_toStartOf="@id/question" />
+
+    <TextView
+        android:id="@+id/solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="meow"
+        android:textColor="#ff0000"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="200dp"
+        app:layout_constraintTop_toBottomOf="@id/answerCheck"
+        app:layout_constraintStart_toStartOf="@id/answerCheck" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="650dp"
+        android:text="meow meow meow"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#ff0000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
