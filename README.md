@@ -27,7 +27,7 @@ The following REQUIRED features are completed:
 
 The following STRETCH features are implemented:
 
-- [ ] Create a custom-shape Button using Shape Drawables
+- [x] Create a custom-shape Button using Shape Drawables
 - [ ] Customize the text fonts by creating new Font Resources
 - [ ] Add Tooltips to your Views to help users understand how to navigate the UI
 - [ ] Create a second layout, this time for an original, personal app idea
